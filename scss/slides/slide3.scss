@@ -1,0 +1,270 @@
+.maincontent {
+	position: relative;
+}
+
+.rays {
+	position: relative;
+}
+
+.casino {
+	position: absolute;
+	transform: translateX(15%)translateY(50%);
+}
+
+.casino__img {
+	filter: drop-shadow(0 0 10px rgb(54, 54, 54));
+}
+
+.windows__img {
+	position: absolute;
+	top: 127px;
+    left: 54px;
+}
+
+.window-dark {
+	z-index: 5;
+}
+
+.site {
+	position: absolute;
+	top: 60px;
+    left: 20px;
+}
+
+.offer {
+	position: absolute;
+	top: 67px;
+    left: 9px;
+}
+
+.casino__img {
+	position: absolute;
+}
+
+.handle__up {
+	transform: translateX(15%)translateY(50%);
+	animation-name: slot1;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-duration: .5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+.handle__mid {
+	transform: translateX(15%) translateY(98%);
+	visibility: hidden;
+	animation-name: slot2;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-duration: .5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-delay: .3s;
+}
+.handle__down {
+	transform: translateX(15%) translateY(74%);
+	visibility: hidden;
+	animation-name: slot3;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-duration: .5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-delay: .5s;
+
+}
+
+
+
+
+
+@keyframes slot1 {
+	0% {
+	visibility: visible;
+	}
+	45% {
+	visibility: visible;
+	}
+	55% {
+	visibility: hidden;
+	}
+	100% {
+	visibility: hidden;
+	}
+	}
+
+	@keyframes slot2 {
+		0% {
+		visibility: visible;
+		}
+		45% {
+		visibility: visible;
+		}
+		55% {
+		visibility: hidden;
+		}
+		100% {
+		visibility: hidden;
+		}
+		}
+
+		@keyframes slot3 {
+			0% {
+			visibility: visible;
+			}
+			45% {
+			visibility: visible;
+			}
+			55% {
+			visibility:visible;
+			}
+			100% {
+			visibility: visible;
+			}
+}
+
+.rays__img {
+	position: absolute;
+	width: 140%;
+	top: -30px;
+	left: -40px;
+	height: auto;
+	animation-name: rotate;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@keyframes rotate {
+	0%   { transform: rotate(0deg); }
+	50% { transform: rotate(360deg);}
+	100% { transform: rotate(360deg); }
+  }
+
+
+
+.slot__left {
+	animation-name: slot-left;
+}
+
+.slot__right {
+	animation-name: slot-right;
+}
+
+.slot__right,
+.slot__left {
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@keyframes slot-left {
+	0% { transform: translate(0, 0px);}
+	10% { transform: translate(0, 400px);}
+	20% { transform: translate(0, -400px);}
+	30% { transform: translate(0, 400px);}
+	40% { transform: translate(0, -400px);}
+	50% { transform: translate(0, 400px);}
+	60% { transform: translate(0, -400px);}
+	70% { transform: translate(0, 400px);}
+	100% { transform: translate(0, -10px);}
+}
+
+@keyframes slot-right {
+	0% { transform: translate(0, 0px);}
+	10% { transform: translate(0, 400px);}
+	20% { transform: translate(0, -400px);}
+	30% { transform: translate(0, 400px);}
+	40% { transform: translate(0, -400px);}
+	50% { transform: translate(0, 400px);}
+	60% { transform: translate(0, -400px);}
+	70% { transform: translate(0, 400px);}
+	100% { transform: translate(0, 20px);}
+}
+
+.slot__right {
+	margin-top: -30px;
+}
+.slot__left {
+	margin-top: 30px;
+}
+
+.number {
+	width: 55%;
+}
+.plus {
+	width: 45%;
+}
+
+
+.plus__left {
+	margin-left: 12px;
+}
+
+.plus__right {
+	margin-left: -15px;
+}
+
+.numbers {
+	position: absolute;
+	width: 112px;
+    height: 96px;
+    top: 127px;
+    left: 60px;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.slot {
+	width: 45%;
+	// background-color:red;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	overflow: hidden;
+	align-items: center;
+}
+
+
+
+
+
+
+.basiron-pack {
+	position: absolute;
+	top: 270px;
+	left: -175px;
+	animation-name: basiron;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+
+@keyframes basiron {
+	0% { transform: translate(0, 0); }
+	100% { transform: translate(205px, 0); }
+  }
+
+.basiron-label {
+	position: absolute;
+	top: 235px;
+    left: 84px;
+	opacity: 0;
+	animation-name: label;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 4s;
+}
+
+@keyframes label{0%{opacity:.3}20%{opacity:.4}40%{opacity:.5}60%{opacity:.6}80%{opacity:.7}90%{opacity:.9}100%{opacity:1}}
+

@@ -1,0 +1,32 @@
+.finish__text-block {
+	top: 40px;
+	left: 34px;
+	animation-delay: 11s;
+}
+
+.finish__text-block,
+.finish__pack,
+.finish__label {
+	position: absolute;
+	animation-name: finish;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes finish{5%{opacity:.3}20%{opacity:.4}40%{opacity:.5}60%{opacity:.6}80%{opacity:.7}90%{opacity:.9}100%{opacity:1}}
+
+
+.finish__pack {
+	top: 270px;
+	left: 32px;
+	animation-delay: 12s;
+}
+
+.finish__label {
+	top: 230px;
+    left: 85px;
+	animation-delay: 13s;
+}
